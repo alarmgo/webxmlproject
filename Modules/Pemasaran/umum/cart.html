@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIM_55_KEL7_P2</title>
+    <script src="../../../Res/js/jquery.js"></script>
+    <script src="../../../Res/js/bootstrap.min.js"></script>
+    <link href="../../../Res/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Res/css/custom.css" rel="stylesheet" />
+
+    
+  </head>
+  <body class="bg-light" style="font-family: Arial, Helvetica, sans-serif; overflow-y: scroll;">
+
+
+    <div class="container border d-sm-none d-md-none d-lg-block" style="width: 10rem; height: 5rem; position: fixed; bottom: 1rem; left: 1rem;">
+      <div class="row">
+        <div class="col p-0">
+          <a href="Desktop/index-load.html">
+            <button class="w-100 btn btn-ndis">
+              Desktop
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col p-0">
+          <a href="index-load.html">
+            <button class="w-100 btn btn-nact">
+              Mobile
+            </button>
+          </a>
+        </div>
+      </div>
+  </div>  
+
+    <div class="container shadow bg-white" style="min-width: 25rem; max-width: 25rem; height: auto;">
+      <!-- NAVBARS TOP BOTTOM-->
+      <div class="row" style="z-index: 100;">
+        <div class="col navtop position-fixed bg-gnf" style="min-width: 25rem; max-width: 25rem; height: 4rem;">
+          <div class="row h-100">
+            <div class="col-2 my-auto mx-auto">
+              <a href="index-load.html">
+                <img src="Img/back.png" class="w-100 d-inline"> 
+              </a>
+            </div>
+            <div class="col">
+              <div class="row h-100">
+                <div class="col my-auto text-center text-white" >
+                  Checkout
+                </div>
+              </div>
+            </div>
+            <div class="col-2 my-auto mx-auto">
+              <a href="index.html">
+                <img src="Img/info.png" class="w-75 d-inline"> 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col position-fixed bg-light" style="border-top: 1px solid gray; width: 25rem; height: 4rem; bottom: 0px;">
+          <div class="row h-100">
+
+            <div class="col">
+              <div class="row ">
+                <div class="col-8">
+                  <div class="row h-25" >
+                    <div class="col mt-2" style="font-size: 0.8rem;">
+                      Total
+                    </div>
+                  </div>
+                  <div class="row h-75">
+                    <div class="col-4 my-auto" style="font-size: 1rem;">
+                      <strike class="text-danger">Rp23.500</strike>
+                    </div>
+                    <div class="col px-0" style="font-size: 1.5rem;">
+                      Rp18.500
+                    </div>
+                  </div>
+                </div>
+                <div class="col my-auto">
+                  <a href="confirm-load.html">
+                    <button class="btn btn-success my-auto ">
+                      Konfirmasi
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- KONTEN DIBAWAH SINI -->
+      <div class="container-fluid px-0" style="margin-top: 4rem; height: calc(100vh - 4rem);">
+        <div class="row h-100">
+          <div class="col">
+          
+            <div class="row mt-3">
+              <div class="col text-black-50 mb-1" style="font-size: 0.7rem;">
+                Alamat dan penerima
+              </div>
+            </div>
+
+            <a href="#">
+              <div class="row mx-2 cart-item" style="height: 5rem;">
+                <div class="col my-auto">
+
+                  <div class="row mt-1">
+                    <div class="col text-black-50" style="font-size: 0.8rem;">
+                      <span class="font-weight-bold text-dark">Dummy User</span> <br />
+                      Perum. dummy no.123/45 rt.00/rw.00, kel. abcdefghij, kec. abcdefghij, kota bogor. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          
+            <div class="row mt-3">
+              <div class="col text-black-50 mb-1" style="font-size: 0.7rem;">
+                Waktu Pengiriman
+              </div>
+            </div>
+            <div class="row mx-2 ">
+              <div class="col my-auto">
+
+                <div class="row mt-1">
+                  <div class="col text-black-50" style="font-size: 0.8rem;">
+                    <div class="row">
+                      <div class="col">
+                        <span class="font-weight-bold text-dark">Hari</span> <br />
+                        <select  style="width: 100%; border: none; border-bottom: 1px solid green;">
+                          <option selected value="today">Hari ini</option>
+                          <option value="besok">Besok</option>
+                          <option value="lusa">Lusa</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <span class="font-weight-bold text-dark">Waktu</span> <br />
+                        <select  style="width: 100%; border: none; border-bottom: 1px solid green;">
+                          <option value disabled="pagi">Pagi (06.00 - 08.00)</option>
+                          <option value selected="siang">Siang (10.00 - 12.00)</option>
+                          <option value="sore">Sore (15.00 - 17.00)</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col text-black-50 mb-1" style="font-size: 0.7rem;">
+                Pembayaran
+              </div>
+            </div>
+            <div class="row mx-2 ">
+              <div class="col my-auto">
+
+                <div class="row mt-1">
+                  <div class="col text-black-50" style="font-size: 0.8rem;">
+                    <div class="row">
+                      <div class="col">
+                        <span class="font-weight-bold text-dark">Metode</span> <br />
+                        <select  style="width: 100%; border: none; border-bottom: 1px solid green;">
+                          <option selected value="cod">Cash On Delivery</option>
+                          <option value="gnfpoint">GnF - Point</option>
+                          <option value="paylater">PayLater</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row mt-2">
+                      <div class="col">
+                        <span class="font-weight-bold text-dark">Kode Promo</span> <br />
+                        <input type="text" placeholder="Masukkan kode promo?" value="24YUR" style="width: 100%; border: none; border-bottom: 1px solid green;">
+                      </div>
+                      <div class="col">
+                        <span class="font-weight-bold text-dark"></span> <br />
+                        <span class="font-weight-bold text-success">&#10004; Kode promo valid</span>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col">
+                
+                <div class="row" style="height: 5rem; border-top: 1px solid gray;">
+                  <div class="col-3 bg-danger p-0">
+                    <img src="Img/kentang.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                  </div>
+                  
+                  <div class="col">
+                    <div class="row h-25">
+                      <div class="col" style="font-size: 0.8rem;">
+                        Kentang Organik 
+                      </div>
+                    </div>
+                    <div class="row h-75 ">
+                      <div class="col my-auto bg">
+                        <div class="row">
+                          <div class="col">
+                            <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                            Kg
+                          </div>
+                          <div class="col">
+                            Rp.12.345
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row" style="height: 5rem; border-top: 1px solid gray; border-bottom: 1px solid gray">
+                  <div class="col-3 bg-danger p-0">
+                    <img src="Img/wortel.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                  </div>
+                  
+                  <div class="col">
+                    <div class="row h-25">
+                      <div class="col" style="font-size: 0.8rem;">
+                        Wortel Lokal Super
+                      </div>
+                    </div>
+                    <div class="row h-75 ">
+                      <div class="col my-auto bg">
+                        <div class="row">
+                          <div class="col">
+                            <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                            Kg
+                          </div>
+                          <div class="col">
+                            Rp.12.345
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+
+              </div>
+            </div>
+      
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIM_55_KEL7_P2</title>
+    <script src="../../../Res/js/jquery.js"></script>
+    <script src="../../../Res/js/bootstrap.min.js"></script>
+    <link href="../../../Res/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../Res/css/custom.css" rel="stylesheet" />
+
+    
+  </head>
+  <body class="bg-light" style="font-family: Arial, Helvetica, sans-serif;">
+
+    <div class="container border d-sm-none d-md-none d-lg-block" style="width: 10rem; height: 5rem; position: fixed; bottom: 1rem; left: 1rem;">
+        <div class="row">
+          <div class="col p-0">
+            <a href="Desktop/index-load.html">
+              <button class="w-100 btn btn-ndis">
+                Desktop
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-0">
+            <a href="index-load.html">
+              <button class="w-100 btn btn-nact">
+                Mobile
+              </button>
+            </a>
+          </div>
+        </div>
+    </div>  
+
+    <div class="container shadow bg-white" style="min-width: 25rem; max-width: 25rem; height: auto;">
+
+
+      <!-- NAVBARS TOP BOTTOM-->
+      <div class="row" style="z-index: 100;">
+        <div class="col navtop position-fixed bg-gnf" style="min-width: 25rem; max-width: 25rem; height: 4rem;">
+          <div class="row h-100">
+            <div class="col-11 bg-light m-auto" style="height: 2.5rem; border-radius: 0.5rem;">
+              <div class="row h-100">
+                <div class="col m-auto">
+                  <img src="Img/find.png">
+                </div>
+                <div class="col-10 my-auto " style="position: relative; left: -2rem;">
+                  <input type="text" placeholder="Cari buah dan sayur terbaik!" style="width: 20rem; border: none; background-color: transparent;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col navbot position-fixed bg-white" style="width: 25rem; height: 4rem; bottom: 0px;">
+          <div class="row h-100">
+            <button class="col-2 btn btn-success" style="border-right: 1px solid; border-radius: 0; border-top-left-radius: 0.4rem;">
+              <div class="row">
+                <div class="col">
+                  <img src="Img/profile.png" style="width: 100%;">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" style="font-size: 0.8rem;">
+                  Akun
+                </div>
+              </div>
+            </button>
+            <div class="col-10">
+              <div class="row ">
+                <div class="col-7">
+                  <div class="row h-25" >
+                    <div class="col mt-2" style="font-size: 0.8rem;">
+                      Total
+                    </div>
+                  </div>
+                  <div class="row h-75">
+                    <div class="col my-auto" style="font-size: 1.5rem;">
+                      Rp23.500
+                    </div>
+                  </div>
+                </div>
+                <div class="col my-auto">
+                  <a href="cart-load.html">
+                    <button class="btn btn-outline-success my-auto ">
+                      Checkout
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KONTEN DIBAWAH SINI -->
+      <div class="container-fluid px-0" style="margin-top: 4rem;">
+        <div class="row bg-gnf">
+          <div class="col text-center">
+            <img src="Img/gnf.png" class="w-75">
+          </div>
+        </div>
+
+        <!-- Carousel Disini -->
+        <div class="row mb-5"> 
+          <div class="col mt-3" style="height: 10rem; ">
+            <div id="carouselExampleIndicators" class="carousel slide"  data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 cardbit" src="Img/carousel1.jpg" alt="First slide" >
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 cardbit" src="Img/carousel1.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100 cardbit" src="Img/carousel1.jpg" alt="Third slide">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Promotional -->
+        <div class="row">
+          <div class="col">
+            <div class="row">
+              <div class="col-5">
+                <img src="Img/profile.jpg" class="w-100">
+              </div>
+              <div class="col">
+                <p class="text-justify" style="font-size: 0.8rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                  Halo warga Bogor! Kini belanja sayur dan buah menjadi sangat mudah loh! 
+                  Selamat berbelanja di Green N Fresh Mart! Hasil kebun ada pada gengggaman anda!
+                </p>
+                <p class="text-justify" style="font-size: 0.8rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                  Promo pengguna baru : <a href="#"><span class="font-weight-bold mx-2" style="color: #4CAF50; font-size: larger;" >24YUR</span></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- KATALOG ITEM -->
+        <div class="row">
+
+          <div class="col pb-5" style="height: auto;">
+            <div class="row">
+              <div class="col">
+                <a href="#">
+                  <div class="row my-2">
+                    <div class="col text-left my-auto">
+                      Panen esok hari
+                    </div>
+                    <div class="col text-right my-auto" style="font-size: 0.7rem;">
+                      Lihat semua +
+                    </div>
+                  </div>
+                </a>    
+              </div>
+            </div>
+            <div class="row">
+              <!-- TEMPLATE PRODUK -->
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/wortel.jpg" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Wortel Lokal Super<br>
+                        <sub>1 buah/100g</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.1.500/<sub>100g</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/kentang.jpg" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Kentang Organik<br>
+                        <sub>1 buah/250g</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.12.500/<sub>500g</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                        <!--  KATEGORI -->
+            <hr>
+            <div class="row mt-4">
+              <div class="col">
+                <a href="#">
+                  <div class="row my-2">
+                    <div class="col text-left my-auto">
+                      Rekomendasi Buah
+                    </div>
+                    <div class="col text-right my-auto" style="font-size: 0.7rem;">
+                      Lihat semua +
+                    </div>
+                  </div>
+                </a>    
+              </div>
+            </div>
+            <div class="row">
+              <!-- TEMPLATE PRODUK -->
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-5">
+              <!-- TEMPLATE PRODUK -->
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+                        <!--  KATEGORI -->
+            <hr>
+            <div class="row mt-4">
+              <div class="col">
+                <a href="#">
+                  <div class="row my-2">
+                    <div class="col text-left my-auto">
+                      Rekomendasi Buah
+                    </div>
+                    <div class="col text-right my-auto" style="font-size: 0.7rem;">
+                      Lihat semua +
+                    </div>
+                  </div>
+                </a>    
+              </div>
+            </div>
+            <div class="row">
+              <!-- TEMPLATE PRODUK -->
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-5">
+              <!-- TEMPLATE PRODUK -->
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+                        <!--  KATEGORI -->
+            <div class="row mt-4">
+              <div class="col">
+                <a href="#">
+                  <div class="row my-2">
+                    <div class="col text-left my-auto">
+                      Rekomendasi Sayur
+                    </div>
+                    <div class="col text-right my-auto" style="font-size: 0.7rem;">
+                      Lihat semua +
+                    </div>
+                  </div>
+                </a>    
+              </div>
+            </div>
+            <div class="row">
+              <!-- TEMPLATE PRODUK -->
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-5">
+              <!-- TEMPLATE PRODUK -->
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 card mx-auto" style="height: 15rem;">
+                <div class="row h-50">
+                  <div class="col p-0">
+                    <img src="Img/ph.png" style="width: 100%; height: 7rem; object-fit: cover;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <hr class="mt-0 mb-1 w-100" />
+                    <div class="row my-2" style="font-size: 0.8rem;">
+                      <div class="col text-center my-auto">
+                        Judul Produk<br>
+                        <sub>Unit/Berat Produk</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-left mb-2 mt-4" style="font-size: 0.9rem;">
+                        Rp.Harga/<sub>Unit</sub>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col text-center bg-success">
+                        <a href="#" >
+                          <button class="btn btn-success" style="border-radius: 0; width: 100%;">Beli</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row my-2 bg-gnf">
+              <div class="col">
+                <a href="#">
+                  <div class="row my-2">
+                    <div class="col text-center my-auto text-white">
+                      End of prototype
+                    </div>
+                  </div>
+                </a>    
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

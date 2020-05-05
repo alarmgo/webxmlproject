@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <title>Form Pendaftaran</title>
+  </head>
+  <body>
+
+    <div class="container-fluid" style="background-color: #4caf50; padding: 0;">
+      <a
+        href="../../../index.html"
+        class="btn btn-info"
+        style="position:absolute; top: 8vh; right: 0vw;"
+        >HOME</a
+      >
+      <div
+        class="row fixed-top bg-gnf"
+        style=" height: 8vh;"
+      >
+        <div class="col" style="margin-top: 0.7rem">
+          <a href="#"
+            ><img src="Img/ham.png" style="width:28px;" class="mx-3"
+          /></a>
+          <a href="#"
+            ><img src="Img/gnf.png" style="height: 28px" class="mx-3"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container"></div>
+      <div class="form p-3 mb-2 bg-info text-white">
+        <h1>Form Pendaftaran</h1>
+        <h3>Tolong lengkapi formulir di bawah ini untuk mendaftar menjadi bagian dari kami</h3>
+        <br>
+
+        <div class="form"> 
+          <table  cellpadding="5"
+                  cellspacing="10"
+                  width="50%">
+          
+                  <tr>
+                      <td>Nama Anda</td>
+                      <td>:</td>
+                      <td>
+                        <form>
+                        <div class="form-row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Nama Depan">
+                            <input type="text" class="form-control" placeholder="Nama Belakang">
+                          </div>
+                        </div>
+                      </form>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td>Tempat, Tanggal Lahir</td>
+                      <td>:</td>
+                      <td>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="ttl1" placeholder="Jakarta">
+                            <input type="date" class="form-control" id="ttl2">
+                          </div>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td>Alamat</td>
+                      <td>:</td>
+                      <td>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="alamat1" placeholder="Nama jalan ">
+                          <input type="text" class="form-control" id="alamat2" placeholder="kecamatan">
+                        </div>
+                      </div>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="kota/kabupaten" placeholder="Kota">
+                            <select id="provinsi" class="form-control">
+                              <option selected>Provinsi</option>
+                              <option>Jawa Barat</option>
+                              <option>Jawa Tengah</option>
+                              <option>Jawa Timur</option>
+                            </select>
+                          </div>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td></td>
+                      <td></td>
+                      <td>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="kodepos" placeholder="Kode Pos">
+                        </div>
+                      </div>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td>E-mail</td>
+                      <td>:</td>
+                      <td>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="c.o. abc@gmail.com">
+                        </div>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td>Nomor Telepon</td>
+                      <td>:</td>
+                      <td>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="nohp" placeholder="08xxxxxxxxxx">
+                        </div>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td>Melamar di Posisi</td>
+                      <td>:</td>
+                      <td>
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <select id="posisi" class="form-control">
+                            <option selected>Pilihan Divisi</option>
+                            <option>Sumber Daya Manusia (SDM)</option>
+                            <option>Keuangan</option>
+                            <option>Akuntansi</option>
+                            <option>Pemasaran</option>
+                            <option>Manufaktur</option>
+                          </select>
+                        </div>
+                      </div>
+                      </td>
+                  </tr>
+      
+                  <tr>
+                      <td>CV</td>
+                      <td>:</td>
+                      <td>
+                        <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" id="btnfile">
+                          Pilih File
+                        </button>
+                        Tidak ada file yang terpilih 
+                      </td>
+                  </tr>
+      
+                  <td colspan="3">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Submit Data</button>
+                  </td>
+          </table>
+        </div>
+        <br>  
+
+        <div class="container" style="background-color: #4caf50; height: 3rem;">
+          <div class="row"> 
+            <div class="col p-3 mb-2 bg-info text-white">
+              <h4><center>Hak Cipta &copy; Fresh 'n Green Mart</center></h4>
+            </div>
+          </div>      
+        </div>   
+
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

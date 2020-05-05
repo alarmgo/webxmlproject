@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SIM_55_KEL7_P2</title>
+        <link href="../../../Res/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../../../Res/css/custom.css" rel="stylesheet" />
+        <script src="../../../Res/js/bootstrap.min.js"></script>
+        <script src="../../../Res/js/jquery.js"></script>
+    </head>
+    <body style="background-color: #e9e9e9;">
+        <div class="container-fluid">
+            <div class="row fixed-top bg-white shadow-sm" style="height: 8vh;">
+                <div class="col-3">
+                    <span class="ml-4" style="font-weight: 650; font-size: 2rem;">GNF<span class="font-weight-light"> Panel</span></span>
+                </div>
+                <div class="col-6">
+
+                </div>
+                <div class="col-3 text-right">
+                    <div class="mt-3 mr-4">
+                        09.18 &nbsp; Senin, 17 Februari 2020
+                    </div>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col position-fixed" style="height: 100vh; width: 15rem; background-color: #444;">
+                    <div class="row" style="background-color: #222; height: 10rem;">
+                        <div class="col-5">
+                            <div class="container pl-0 mx-0 " style="height: 15vh; width: 15rem; position: relative; top: 35%;">
+                                <img src="Img/placeholder.jpg" style=" width: 20%; border-radius: 50%; position: relative; top: 1.5rem;">
+                                <span class="text-white" style="font-size: medium; position: relative; top: 1rem;">Muhammad Aris ...</span>
+                                <span class="text-white font-weight-lighter" style="font-size: 10pt; position: relative; top: -0.5rem; left: 3.1rem;">Human Resource</span>
+                            </div>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                    <div class="row pt-2 text-white">
+                        <div class="font-weight-lighter pl-3" style="font-size: smaller;">Navigasi - </div>
+                        <hr style="border-bottom: 1px solid grey; width: 100%;" />
+                        <ul class="pl-0 w-100 bg-info" type="none">
+                            <li><a href="index.html" class="btn btn-ndis text-left w-100">
+                                <img src="Img/1.svg" style="width: 18%;" />&ensp;<span class="ndis">Dashboard</span>
+                            </a></li>
+                            <li><a href="data.html" class="btn btn-ndis text-left w-100">
+                                <img src="Img/2.png" style="width: 18%;" />&ensp;<span class="ndis">Data Karyawan</span>
+                            </a></li>
+                            <li><a href="rekrut.html" class="btn btn-ndis text-left w-100">
+                                <img src="Img/3.png" style="width: 18%;" />&ensp;<span class="ndis">Rekrutmen</span>
+                            </a></li>
+                            <li><a href="bina.html" class="btn btn-ndis text-left w-100">
+                                <img src="Img/4.png" style="width: 18%;" />&ensp;<span class="ndis">Pembinaan</span>
+                            </a></li>
+                            <li><a href="report.html" class="btn btn-ndis text-left w-100">
+                                <img src="Img/5.png" style="width: 18%;" />&ensp;<span class="ndis">Report</span>
+                            </a></li>
+                            <li><a href="backup.html" class="btn btn-ndis text-left w-100">
+                                <img src="Img/6.png" style="width: 18%;" />&ensp;<span class="ndis">Backup Data</span>
+                            </a></li>
+                            <!-- <li><a href="#" class="btn btn-nact text-left w-100">
+                                <img src="Img/belanja.jpg" style="width: 18%;" />&ensp;<span class="nact">Pengeluaran</span>
+                            </a></li> -->
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- tabel -->
+                <div class="col bhind" style="height: 200vh; position: relative;">
+                    <div class="row px-2" style="margin-top: 8vh;" >
+                        <h3 style="align-content: center;"><b> Pengeluaran Divisi SDM </b> </h3>
+                        <br>
+                        <table>
+                            <tr>
+                                <td> Nama Pengeluaran </td>
+                                <td> : </td>
+                                <td> <input type="text" id="fname" name="fname"> </td>
+                                <td> </td>
+                            </tr>
+                            <tr>
+                                <td> Penggunaan </td>
+                                <td> : </td>
+                                <td> <input type="number" id="fquan" name="fquantity"> </td>
+                                <td> <select id="kuantitas"> per
+                                        <option value="Buah"> Jam </option>
+                                        <option value="Ekor"> Hari </option>
+                                        <option value="Kg"> Minggu </option>
+                                        <option value="Unit"> Bulan </option>
+                                        <option value="Unit"> Pemakaian </option>
+                                        <option value="Unit"> Event </option>
+                                     </select> 
+                                </td>
+                            </tr>
+                            <tr> 
+                                <td> Harga per unit  </td>
+                                <td> : </td>
+                                <td> Rp <input type="text" id="harga" name="harga"> </td>
+                                <td>  </td>
+                            </tr>
+                            <tr>
+                                <td> Total  </td>
+                                <td> : </td>
+                                <td> Rp <input type="text" id="harga" name="harga"> </td>
+                                <td>  </td>
+                            </tr>
+                            <tr>
+                                <td> Tanggal Transaksi  </td>
+                                <td> : </td>
+                                <td> <input type="datetime" id="tanggal" name="tanggal"> dd/mm/yyyy </td>
+                                <td>  </td>
+                            </tr>
+                            <tr>
+                                <td> Keterangan Tambahan (jika ada) </td>
+                                <td> : </td>
+                                <td> <input type="text" id="keterangan" name="keterangan" > </td>
+                                <td>  </td>
+                            </tr>
+                        </table>
+
+                        <!-- Tombol konfirmasi-->
+                        <button type="button" class="btn btn-primary" onclick="SaveFunction()">Simpan</button>
+                        &nbsp;&nbsp;          
+                        <button type="button" class="btn btn-primary"><a href="PengeluaranEdit.html" style="color: white;">Lihat daftar</a></button>
+                        
+                    </div>
+                </div>
+                    
+
+                
+            </div>
+        </div>
+
+        <!-- Javascripts-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+        <!-- Javascript code-->
+        <script>
+            function SaveFunction() {
+              alert("Data sudah disimpan");
+            }
+        </script>
+
+
+    </body>
+</html>
