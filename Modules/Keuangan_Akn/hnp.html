@@ -65,124 +65,30 @@
                 <div class="col bhind" style="height: auto; position: relative;">
 					<div class="container-fluid mt-5 mb-3 pt-4">
 
-                        <div class="row bg-white my-3 ml-0 mr-3" style="height: 30rem; border-radius: 0.5rem;">
+                        <div class="row bg-white py-3 my-3 ml-0 mr-3" style="height: auto; border-radius: 0.5rem;">
                             <div class="col border-right">
                                 <div class="row" >
-                                    <div class="row mx-auto w-100 pt-3">
+                                    <div class="row mx-auto w-100">
                                         <div class="col px-4 text-centre">
                                             <h3>Hutang </h3>
                                         </div>
                                     </div>
                                     <div class="row mx-auto w-100 px-4" >
                                         <table>
-                                            <tr>
-                                                <th style="width: 3rem;"> Tanggal </th>
-                                                <th style="width: 3rem;"> Jatuh Tempo </th>
+                                            <tr id="header">
+                                                <th style="width: 8rem;"> Tanggal </th>
+                                                <th style="width: 8rem;"> Jatuh Tempo </th>
                                                 <th> Tp </th>
                                                 <th style="width: 10rem;"> Divisi </th>
                                                 <th style="width: 5rem"> Mata Uang </th>
-                                                <th style="width: 5rem;"> Debit </th>
-                                                <th style="width: 5rem;"> Kredit </th>
-                
+                                                <th style="width: 10rem;"> Debit </th>
+                                                <th style="width: 10rem;"> Kredit </th>
                                             </tr>
+
                                             <tr>
-                                                <td> 10/01/2016 </td>
-                                                <td> 10/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> SDM </td>
-                                                <td> IDR </td>
-                                                <td> Rp1.000.000 </td>
-                                                <td> Rp500.000</td>
+                                                <td colspan="7" class="text-center">Data Gagal Dimuat</td>
                                             </tr>
-                                            <tr>
-                                                <td> 12/01/2016 </td>
-                                                <td> 12/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> SDM </td>
-                                                <td> IDR </td>
-                                                <td> Rp2.500.000</td>
-                                                <td> - </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 14/01/2016 </td>
-                                                <td> 14/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> Manufaktur </td>
-                                                <td> IDR </td>
-                                                <td> - </td>
-                                                <td> Rp2.000.000 </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 15/01/2016 </td>
-                                                <td> 15/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> Pemasaran </td>
-                                                <td> IDR </td>
-                                                <td> - </td>
-                                                <td> Rp3.500.000 </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 17/01/2016 </td>
-                                                <td> 17/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> Pemasaran </td>
-                                                <td> IDR </td>
-                                                <td> Rp500.000</td>
-                                                <td> - </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 19/01/2016 </td>
-                                                <td> 19/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> Manufaktur </td>
-                                                <td> IDR </td>
-                                                <td> Rp5.000.000 </td>
-                                                <td> - </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 20/01/2016 </td>
-                                                <td> 20/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> SDM </td>
-                                                <td> IDR </td>
-                                                <td> Rp2.000.000 </td>
-                                                <td> Rp.1.000.000 </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 22/01/2016 </td>
-                                                <td> 22/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> SDM </td>
-                                                <td> IDR </td>
-                                                <td> - </td>
-                                                <td> Rp750.000 </td>
-                                            <tr>
-                                                <td> 23/01/2016 </td>
-                                                <td> 23/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> Pemasaran </td>
-                                                <td> IDR </td>
-                                                <td> - </td>
-                                                <td> Rp2.800.000 </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 25/01/2016 </td>
-                                                <td> 25/01/2016 </td>
-                                                <td> PJ </td>
-                                                <td> Manufaktur </td>
-                                                <td> IDR </td>
-                                                <td> Rp1.750.000 </td>
-                                                <td> - </td>
-                                            </tr>
-                                            <tr>
-                                                <td> </td>
-                                                <td style="text-align: center;"> Total </td>
-                                                <td> </td>
-                                                <td> </td>
-                                                <td> </td>
-                                                <td>Rp12.750.000</td>
-                                                <td>Rp10.550.000</td>
-                                            </tr>
+                                           
                                         </table>
                                     </div>
                                 </div>
@@ -194,5 +100,62 @@
 				</div>
             </div>
         </div>
+
+
+		<script>
+			$(document).ready(function () {
+				$.ajax({
+					url: '../../xml/hnp.xml',
+					//dataType: 'xml',
+					beforeSend: function () {
+						$('#header').append('<tr><td>hello</td></tr>'); 
+					},
+                    
+					success: function (response) {
+						$('#header').append('<tr><td>hello</td></tr>'); 
+						var books = $(response).find('book');
+						
+						var i;
+
+						for (i=0; i < books.length; i++){
+							$('body').append('<div id="div'+ i +'" />');
+							var book = books[i];
+							
+							var category = $(book).attr('category');						
+							var cover =	$(book).attr('cover');
+							var title = $(book).children('title').text();
+							var lang = $(book).children('title').attr('lang');
+							
+							var author = '';
+							
+							$(book).children('author').each(function () {
+								author += $(this).text() + ', ';
+							});
+							
+							author = author.substring(0, author.length - 2);
+							
+							var year = $(book).children('year').text();
+							var price = $(book).children('price').text();
+							
+							$('#div'+i).html('Kategori : ' + category +
+							'<br>Judul : ' + title +
+							'<br>Bahasa : ' + lang +
+							'<br>Penulis : ' + author +
+							'<br>Tahun : ' + year +
+							'<br>Harga : ' + price);
+							
+							if (cover)
+								$('#div'+i).append('<br>Cover : ' + cover);
+							
+
+							$('body').append('<br/>');
+						}
+					},
+					error: function (err) {
+						console.log(err);
+					}
+				});
+			});
+		</script>
     </body>
 </html>

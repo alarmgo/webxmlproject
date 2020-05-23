@@ -1,0 +1,102 @@
+<hnp tdebit="Rp12.750.000" tcredit="Rp10.550.000">
+    <invoice>
+        <tanggal> 10/01/2016 </tanggal>
+        <tenggat> 10/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> SDM </divisi>
+        <cur> IDR </cur>
+        <debit> Rp1.000.000 </debit>
+        <credit> Rp500.000 </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 12/01/2016 </tanggal>
+        <tenggat> 12/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> SDM </divisi>
+        <cur> IDR </cur>
+        <debit> Rp2.500.000 </debit>
+        <credit> - </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 14/01/2016 </tanggal>
+        <tenggat> 14/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> Manufaktur </divisi>
+        <cur> IDR </cur>
+        <debit> - </debit>
+        <credit> Rp2.000.000 </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 15/01/2016 </tanggal>
+        <tenggat> 15/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> Pemasaran </divisi>
+        <cur> IDR </cur>
+        <debit> - </debit>
+        <credit> Rp3.500.000 </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 17/01/2016 </tanggal>
+        <tenggat> 17/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> Pemasaran </divisi>
+        <cur> IDR </cur>
+        <debit> Rp500.000 </debit>
+        <credit> - </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 19/01/2016 </tanggal>
+        <tenggat> 19/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> Manufaktur </divisi>
+        <cur> IDR </cur>
+        <debit> Rp5.000.000 </debit>
+        <credit> - </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 20/01/2016 </tanggal>
+        <tenggat> 20/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> SDM </divisi>
+        <cur> IDR </cur>
+        <debit> Rp2.000.000 </debit>
+        <credit> Rp1.000.000 </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 22/01/2016 </tanggal>
+        <tenggat> 22/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> SDM </divisi>
+        <cur> IDR </cur>
+        <debit> - </debit>
+        <credit> Rp750.000 </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 23/01/2016 </tanggal>
+        <tenggat> 23/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> Pemasaran </divisi>
+        <cur> IDR </cur>
+        <debit> - </debit>
+        <credit> Rp2.800.000 </credit>
+    </invoice>
+
+    <invoice>
+        <tanggal> 25/01/2016 </tanggal>
+        <tenggat> 25/01/2016 </tenggat>
+        <tp> PJ </tp>
+        <divisi> Manufaktur </divisi>
+        <cur> IDR </cur>
+        <debit> Rp1.750.000 </debit>
+        <credit> - </credit>
+    </invoice>
+
+</hnp>
