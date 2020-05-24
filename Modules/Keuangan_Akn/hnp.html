@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SIM_55_KEL7_P2</title>
-		<script type="text/javascript" src="../../Res/js/jquery.js"></script>
+<!-- 		<script type="text/javascript" src="../../Res/js/jquery.js"></script> -->
         <script type="text/javascript" src="../../Res/js/bootstrap.min.js"></script>
         <link href="../../Res/css/bootstrap.min.css" rel="stylesheet" />
         <link href="../../Res/css/custom.css" rel="stylesheet" />
@@ -74,8 +74,8 @@
                                         </div>
                                     </div>
                                     <div class="row mx-auto w-100 px-4" >
-                                        <table>
-                                            <tr id="header">
+                                        <table id="table">
+                                            <tr>
                                                 <th style="width: 8rem;"> Tanggal </th>
                                                 <th style="width: 8rem;"> Jatuh Tempo </th>
                                                 <th> Tp </th>
@@ -85,9 +85,7 @@
                                                 <th style="width: 10rem;"> Kredit </th>
                                             </tr>
 
-                                            <tr>
-                                                <td colspan="7" class="text-center">Data Gagal Dimuat</td>
-                                            </tr>
+                                    
                                            
                                         </table>
                                     </div>
@@ -101,18 +99,18 @@
             </div>
         </div>
 
-
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script>
 			$(document).ready(function () {
 				$.ajax({
 					url: '../../xml/hnp.xml',
 					//dataType: 'xml',
 					beforeSend: function () {
-						$('#header').append('<tr><td>hello</td></tr>'); 
+						$('#table tbody').append('<tr><td colspan="7" class="text-center">Data Gagal Dimuat</td></tr>'); 
 					},
                     
 					success: function (response) {
-						$('#header').append('<tr><td>hello</td></tr>'); 
+						$('#table tbody').append('<tr><td colspan="7" class="text-center">Data Gagal Dimuat</td></tr>'); 
 						var books = $(response).find('book');
 						
 						var i;
