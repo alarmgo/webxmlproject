@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SIM_55_KEL7_P2</title>
 		<script type="text/javascript" src="../../Res/js/jquery.js"></script>
-        <script type="text/javascript" src="../../Res/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../Res/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../Res/js/actions.js"></script>
         <link href="../../Res/css/bootstrap.min.css" rel="stylesheet" />
         <link href="../../Res/css/custom.css" rel="stylesheet" />
     </head>
@@ -19,8 +20,8 @@
 
                 </div>
                 <div class="col-3 text-right">
-                    <div class="mt-3 mr-4">
-                        09.18 &nbsp; Senin, 17 Februari 2020
+                    <div class="mt-3 mr-4" id="timenow">
+						<script>time()</script>
                     </div>    
                 </div>
             </div>
@@ -63,13 +64,13 @@
                 </div>
                 <div class="col bhind" style="height: auto; position: relative;">
 					<div class="container-fluid mt-5 mb-3 pt-4">
-						<div class="row text-white" style="height: 8rem;">
+						<div class="row text-white " style="height: 8rem;">
 							<div class="col bg-success findash mx-2">
 								<div class="row" style="height: 75%;">
 									<div class='col-10'>
 										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
+											<div id="dayin">
+												
 											</div> 
 										</div>
 										<div class="row ml-1 font-weight-light" style="height: 50%;">
@@ -94,8 +95,8 @@
 								<div class="row" style="height: 75%;">
 									<div class='col-10'>
 										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
+											<div id="monthin">
+												
 											</div> 
 										</div>
 										<div class="row ml-1 font-weight-light" style="height: 50%;">
@@ -120,12 +121,12 @@
 								<div class="row" style="height: 75%;">
 									<div class='col-10'>
 										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
+											<div id="yearin">
+												
 											</div> 
 										</div>
 										<div class="row ml-1 font-weight-light" style="height: 50%;">
-											<div>
+											<div >
 												Pemasukan Tahun Ini
 											</div> 
 										</div>
@@ -146,13 +147,13 @@
 								<div class="row" style="height: 75%;">
 									<div class='col-10'>
 										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
+											<div id="totalin">
+												
 											</div> 
 										</div>
 										<div class="row ml-1 font-weight-light" style="height: 50%;">
 											<div>
-												Total Pemasukan
+												Total Bersih
 											</div> 
 										</div>
 									</div>
@@ -177,8 +178,8 @@
 								<div class="row" style="height: 75%;">
 									<div class='col-10'>
 										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
+											<div id=dayout>
+												
 											</div> 
 										</div>
 										<div class="row ml-1 font-weight-light" style="height: 50%;">
@@ -203,8 +204,8 @@
 								<div class="row" style="height: 75%;">
 									<div class='col-10'>
 										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
+											<div id="monthout">
+
 											</div> 
 										</div>
 										<div class="row ml-1 font-weight-light" style="height: 50%;">
@@ -229,8 +230,8 @@
 								<div class="row" style="height: 75%;">
 									<div class='col-10'>
 										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
+											<div id="yearout">
+												
 											</div> 
 										</div>
 										<div class="row ml-1 font-weight-light" style="height: 50%;">
@@ -251,34 +252,11 @@
 									<a href="#" class="container text-white text-center my-auto" style="font-size: 0.7rem;">Click for more</a>
 								</div>
 							</div>
-							<div class="col bg-light text-dark findash mx-2">
-								<div class="row" style="height: 75%;">
-									<div class='col-10'>
-										<div class="row mt-3 ml-1 font-weight-bold" style="height: 50%;">
-											<div>
-												Rp123.456.789,00
-											</div> 
-										</div>
-										<div class="row ml-1 font-weight-light" style="height: 50%;">
-											<div>
-												Total Pengeluaran
-											</div> 
-										</div>
-									</div>
-									<div class="col">
-										<div class="row " style="height: 50%;">
-										</div>
-										<div class="row " style="height: 50%">
-											<img src="Img/stat.png" style="opacity: 0.2; width: 100%; object-fit: cover;">
-										</div>
-									</div>
-								</div>
-								<div class="row " style="height: 25%; border-top: 1px solid black;">
-									<a href="#" class="container text-center my-auto" style="font-size: 0.7rem;">Click for more</a>
-								</div>
-							</div>
+
 						</div>
 						<div class="row my-2">
+
+							<script>summary()</script>
 							<!-- DIVIDER-->
 						</div>
 						<div class="row bg-light shadow-sm" style="border-radius: 0.3rem;">
