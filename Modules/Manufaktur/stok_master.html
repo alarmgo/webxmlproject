@@ -4,9 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SIM_55_KEL7_P2</title>
-        <script src="../../Res/js/jquery.js"></script>
-        <script src="../../Res/js/popper.min.js"></script>
-        <script src="../../Res/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../Res/js/jquery.js"></script>
+        <script type="text/javascript" src="../../Res/js/popper.min.js"></script>
+        <script type="text/javascript" src="../../Res/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../Res/js/stokMaster.js"></script>
         <link href="../../Res/css/bootstrap.min.css" rel="stylesheet" />
         <link href="../../Res/css/custom.css" rel="stylesheet" />
         
@@ -21,8 +22,8 @@
 
                 </div>
                 <div class="col-3 text-right">
-                    <div class="mt-3 mr-4">
-                        09.18 &nbsp; Senin, 17 Februari 2020
+                    <div class="mt-3 mr-4" id="timenow">
+                        <script>time()</script>
                     </div>    
                 </div>
             </div>
@@ -116,7 +117,7 @@
                                         </div>
                                     </div>
                                     <div class="row my-1 mx-2" style="overflow-y: scroll;">
-                                        <table>
+                                        <table id="stokMaster">
                                             <tr>
                                                 <th style="width: 3rem;"> No </th>
                                                 <th> Nama </th>
@@ -125,87 +126,8 @@
                                                 <th style="width: 5rem"> Stok </th>
                                                 <th style="width: 5rem"> Satuan </th>
                                             </tr>
-                                            <tr>
-                                                <td> 1. </td>
-                                                <td> Wortel Lokal Super </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> A </td>
-                                                <td> 45.3 </td>
-                                                <td> Kg </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 2. </td>
-                                                <td> Wortel Lokal Super </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> B </td>
-                                                <td> 35.8 </td>
-                                                <td> Kg </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 3. </td>
-                                                <td> Wortel Lokal Super </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> C </td>
-                                                <td> 25.6 </td>
-                                                <td> Kg </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 4. </td>
-                                                <td> Produk-xyz </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> x </td>
-                                                <td> xxx </td>
-                                                <td> Gr/Kg/Ton </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 5. </td>
-                                                <td> Produk-xyz </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> x </td>
-                                                <td> xxx </td>
-                                                <td> Gr/Kg/Ton </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 6. </td>
-                                                <td> Produk-xyz </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> x </td>
-                                                <td> xxx </td>
-                                                <td> Gr/Kg/Ton </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 7. </td>
-                                                <td> Produk-xyz </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> x </td>
-                                                <td> xxx </td>
-                                                <td> Gr/Kg/Ton </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 8. </td>
-                                                <td> Produk-xyz </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> x </td>
-                                                <td> xxx </td>
-                                                <td> Gr/Kg/Ton </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 9. </td>
-                                                <td> Produk-xyz </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> x </td>
-                                                <td> xxx </td>
-                                                <td> Gr/Kg/Ton </td>
-                                            </tr>
-                                            <tr>
-                                                <td> 10. </td>
-                                                <td> Produk-xyz </td>
-                                                <td> dd/mm/yyyy </td>
-                                                <td> x </td>
-                                                <td> xxx </td>
-                                                <td> Gr/Kg/Ton </td>
-                                            </tr>
                                         </table>
+                                        <script>stokMaster()</script>
                                     </div>
                                     <div class="row w-100 mx-0 px-2 py-2">
                                         <div class="col text-right">

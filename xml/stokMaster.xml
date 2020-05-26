@@ -1,0 +1,72 @@
+<stokMaster>
+    <produk>
+        <nama>Wortel Imperator</nama>
+        <tanggal>20/11/2019</tanggal>
+        <grade>A</grade>
+        <stok>120</stok>
+        <satuan>Kg</satuan>
+    </produk>
+    <produk>
+        <nama>Wortel Chantenay</nama>
+        <tanggal>20/11/2019</tanggal>
+        <grade>A</grade>
+        <stok>320</stok>
+        <satuan>Kg</satuan>
+    </produk>
+    <produk>
+        <nama>Wortel Mantes</nama>
+        <tanggal>20/11/2019</tanggal>
+        <grade>B</grade>
+        <stok>520</stok>
+        <satuan>Kg</satuan>
+    </produk>
+    <produk>
+        <nama>Chuck</nama>
+        <tanggal>2/12/2019</tanggal>
+        <grade>B</grade>
+        <stok>600</stok>
+        <satuan>Kg</satuan>
+    </produk>
+    <produk>
+        <nama>Rib</nama>
+        <tanggal>2/12/2019</tanggal>
+        <grade>B</grade>
+        <stok>1000</stok>
+        <satuan>Kg</satuan>
+    </produk>  
+    <produk>
+        <nama>Sirloin</nama>
+        <tanggal>2/12/2019</tanggal>
+        <grade>A</grade>
+        <stok>100</stok>
+        <satuan>Kg</satuan>
+    </produk>   
+    <produk>
+        <nama>Shank</nama>
+        <tanggal>2/12/2019</tanggal>
+        <grade>A</grade>
+        <stok>100</stok>
+        <satuan>Kg</satuan>
+    </produk>   
+    <produk>
+        <nama>keju biru</nama>
+        <tanggal>2/12/2019</tanggal>
+        <grade>C</grade>
+        <stok>300</stok>
+        <satuan>Kg</satuan>
+    </produk>   
+    <produk>
+        <nama>keju mozzarela</nama>
+        <tanggal>2/12/2019</tanggal>
+        <grade>A</grade>
+        <stok>500</stok>
+        <satuan>Kg</satuan>
+    </produk>
+    <produk>
+        <nama>keju parmesan</nama>
+        <tanggal>2/12/2019</tanggal>
+        <grade>A</grade>
+        <stok>120</stok>
+        <satuan>Kg</satuan>
+    </produk>
+</stokMaster>
