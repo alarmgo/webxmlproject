@@ -1,4 +1,5 @@
 <dataProduksi>
+
     <summary>
         <statusAll>Aman</statusAll>
         <statusAman>14</statusAman>
@@ -7,7 +8,7 @@
     </summary>
 
     <dataBarang>
-        <barang id="HW001">
+        <barang>
             <kode>HW001</kode>
             <nama>Susu Sapi</nama>
             <kategori>Hewani</kategori>
@@ -15,7 +16,7 @@
             <stok>6</stok>
             <status>Aman</status>
         </barang>
-        <barang id="HW003">
+        <barang>
             <kode>HW001</kode>
             <nama>Keju</nama>
             <kategori>Hewani</kategori>
@@ -23,7 +24,7 @@
             <stok>3</stok>
             <status>Aman</status>
         </barang>
-        <barang id="NAB010">
+        <barang>
             <kode>NAB010</kode>
             <nama>Kubis</nama>
             <kategori>Nabati</kategori>
@@ -31,7 +32,7 @@
             <stok>3</stok>
             <status>Aman</status>
         </barang>
-        <barang id="NAB006">
+        <barang>
             <kode>NAB006</kode>
             <nama>Wortel</nama>
             <kategori>Nabati</kategori>
@@ -39,7 +40,7 @@
             <stok>6</stok>
             <status>Aman</status>
         </barang>
-        <barang id="HW006">
+        <barang>
             <kode>HW006</kode>
             <nama>Daging Sapi</nama>
             <kategori>Hewani</kategori>
@@ -47,7 +48,7 @@
             <stok>11</stok>
             <status>Aman</status>
         </barang>
-        <barang id="HW005">
+        <barang>
             <kode>HW005</kode>
             <nama>Daging Kambing</nama>
             <kategori>Hewani</kategori>
@@ -55,7 +56,7 @@
             <stok>6</stok>
             <status>Kurang</status>
         </barang>
-        <barang id="NAB003">
+        <barang>
             <kode>NAB003</kode>
             <nama>Susu Kedelai</nama>
             <kategori>Nabati</kategori>
@@ -63,7 +64,7 @@
             <stok>1</stok>
             <status>Kurang</status>
         </barang>
-        <barang id="HW011">
+        <barang>
             <kode>HW011</kode>
             <nama>Daging Ayam</nama>
             <kategori>Hewani</kategori>
@@ -71,7 +72,7 @@
             <stok>17</stok>
             <status>Aman</status>
         </barang>
-        <barang id="HW017">
+        <barang>
             <kode>HW005</kode>
             <nama>Ikan Mas</nama>
             <kategori>Hewani</kategori>
@@ -80,4 +81,5 @@
             <status>Aman</status>
         </barang>
     </dataBarang>
+
 </dataProduksi>
