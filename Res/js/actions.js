@@ -73,11 +73,23 @@ function sumakn(){
 
 function sumsdm(){
     $.ajax({
-        url: '../../xml/sdm.xml',
+        url: '../../../xml/sdm.xml',
         //dataType: 'xml',
-        error: function () {
-          alert('failed to load data...'); 
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('An error occurred... Look at the console (F12 or Ctrl+Shift+I, Console tab) for more information!');
+
+            $('#result').html('<p>status code: '+jqXHR.status+'</p><p>errorThrown: ' + errorThrown + '</p><p>jqXHR.responseText:</p><div>'+jqXHR.responseText + '</div>');
+            console.log('jqXHR:');
+            console.log(jqXHR);
+            console.log('textStatus:');
+            console.log(textStatus);
+            console.log('errorThrown:');
+            console.log(errorThrown);
         },
+
+        /**
+         * A function to be called if the request succeeds.
+         */
         
         success: function (response) {
             var sum = $(response).find('attend');
@@ -95,9 +107,141 @@ function sumsdm(){
             $('#izin').html(izin);
 
 
+            var sum = $(response).find('report');
+
+            var awal = $(sum).children('awal').text();
+            var avg = $(sum).attr('avg');
+
+
+
+            $('#awal').html(awal);
+            $('#avg').html(avg);
+
+
+            var sum = $(response).find('recs');
+
+            var open = $(sum).children('open').text();
+            var appl = $(sum).children('appl').text();
+            var step = $(sum).children('step').text();
+            
+
+
+
+            $('#open').html(open);
+            $('#appl').html(appl);
+            $('#step').html(step);
+
+
         },
     })
+
+    
 };
+
+function sumdkar(){
+    $.ajax({
+        url: '../../../xml/sdm.xml',
+        //dataType: 'xml',
+        error: function () {
+          alert(response); 
+        },
+        
+        success: function (response) {
+            var sum = $(response).find('dkar');
+                                        
+           
+            var c = $(sum).children('cuti').text();	
+            var a = $(sum).children('active').text();					
+            var f = $(sum).children('fired').text();					
+            var r = $(sum).children('resign').text();
+            
+            $('#cuti').html(c);
+            $('#active').html(a);
+            $('#fired').html(f);
+            $('#resign').html(r);
+
+            var sum = $(response).find('pegawai');
+                                                              
+            var i;
+
+            for (i=0; i < sum.length; i++){
+                
+                var baris = sum[i];
+                
+                var no = (i+1) + '.';
+                var nama = $(baris).children('nama').text();						
+                var nip =	$(baris).children('nip').text();
+                var divisi = $(baris).children('divisi').text();
+                var cvlink = '<a href="cv/cv.jpg" style="color: royalblue;">Click here</a>';
+                var status = $(baris).children('status').text();
+                var ubahlink =  '<a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a>';
+
+                                            
+                $('#table tbody').append('<tr>'+
+                '<td>' + no + '</td>' +
+                '<td>' + nama + '</td>' +
+                '<td>' + nip + '</td>' +
+                '<td>' + divisi + '</td>' +
+                '<td>' + cvlink + '</td>' +
+                '<td>' + status + '</td>' +
+                '<td>' + ubahlink + '</td>');		
+            }
+        },
+
+
+    })
+};
+
+function sumrek(){
+    $.ajax({
+        url: '../../../xml/sdm.xml',
+        //dataType: 'xml',
+        error: function () {
+          alert(response); 
+        },
+        
+        success: function (response) {
+            var sum = $(response).find('recs');
+                                        
+           
+            var o = $(sum).children('open').text();	
+            var a = $(sum).children('appl').text();					
+            var s = $(sum).children('step').text();	
+            
+            $('#open').html(o);
+            $('#apply').html(a);
+            $('#step').html(s);
+        
+            var sum = $(response).find('rekrut');
+                                                              
+            var i;
+
+            for (i=0; i < 11; i++){
+                
+                var baris = sum[i];
+                
+                var no = (i+1) + '.';
+                var nama = $(sum).children('nama').text();						
+                var divisi = $(sum).children('divisi').text();
+                var cvlink = '<a href="cv/cv.jpg" style="color: royalblue;">View</a>';
+                var tanggal = $(sum).children('tanggal').text();
+                                            
+                $('#table tbody').append('<tr>'+
+                '<td>' + no + '</td>' +
+                '<td>' + nama + '</td>' +
+                '<td>' + divisi + '</td>' +
+                '<td>' + cvlink + '</td>' +
+                '<td>' + tanggal + '</td>');	
+            }
+ 
+        },
+
+        
+
+
+    })
+};
+
 
 
 function time(){
@@ -114,3 +258,10 @@ function maintenance(){
      });
 }
 
+function maintenance2(){
+    $(document).ready(function(){
+   
+        $('#maintenance').load('../../../Error/main.html');
+     
+     });
+}

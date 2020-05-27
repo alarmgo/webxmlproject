@@ -4,13 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SIM_55_KEL7_P2</title>
+        <script type="text/javascript" src="../../../Res/js/jquery.js"></script>
+		<script type="text/javascript" src="../../../Res/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../Res/js/actions.js"></script>
         <link href="../../../Res/css/bootstrap.min.css" rel="stylesheet" />
         <link href="../../../Res/css/custom.css" rel="stylesheet" />
-        <script src="../../../Res/js/bootstrap.min.js"></script>
-        <script src="../../../Res/js/jquery.js"></script>
     </head>
     <body style="background-color: #e9e9e9;">
-        <div class="container-fluid">
+        <div class="container-fluid overflow-hidden">
             <div class="row fixed-top bg-white shadow-sm" style="height: 8vh;">
                 <div class="col-3">
                     <span class="ml-4" style="font-weight: 650; font-size: 2rem;">GNF<span class="font-weight-light"> Panel</span></span>
@@ -19,9 +20,12 @@
 
                 </div>
                 <div class="col-3 text-right">
-                    <div class="mt-3 mr-4">
-                        09.18 &nbsp; Senin, 17 Februari 2020
-                    </div>    
+                    <div class="mt-3 mr-4" id="timenow">
+                        <script>
+                            time();
+                            sumdkar();
+                        </script>
+                    </div>  
                 </div>
             </div>
             <div class="row">
@@ -80,7 +84,7 @@
                                             <div class="m-auto">Pegawai cuti</div>
                                         </div>
                                         <div class="row" style="height: 8rem;">
-                                            <div class="mx-auto my-4" style="font-size: 3rem;">7</div>
+                                            <div class="mx-auto my-4" style="font-size: 3rem;" id="cuti"> </div>
                                         </div>
                                     </div>
                                     <div class="col border-right">
@@ -88,7 +92,7 @@
                                             <div class="m-auto">Pegawai aktif</div>
                                         </div>
                                         <div class="row" style="height: 8rem;">
-                                            <div class="mx-auto my-4" style="font-size: 3rem;">53</div>
+                                            <div class="mx-auto my-4" style="font-size: 3rem;" id="active"> </div>
                                         </div>
                                     </div>
                                     <div class="col border-right">
@@ -96,7 +100,7 @@
                                             <div class="m-auto">Pegawai dipecat</div>
                                         </div>
                                         <div class="row" style="height: 8rem;">
-                                            <div class="mx-auto my-4" style="font-size: 3rem;">3</div>
+                                            <div class="mx-auto my-4" style="font-size: 3rem;" id="fired"> </div>
                                         </div>
                                     </div>
                                     <div class="col border-right">
@@ -104,7 +108,7 @@
                                             <div class="m-auto">Pegawai mengundurkan diri</div>
                                         </div>
                                         <div class="row" style="height: 8rem;">
-                                            <div class="mx-auto my-4" style="font-size: 3rem;">7</div>
+                                            <div class="mx-auto my-4" style="font-size: 3rem;" id="resign"> </div>
                                         </div>
                                     </div>
                                 </div>
@@ -120,7 +124,7 @@
                                             </div>
                                         </div>
                                         <div class="row mx-auto w-100 px-4" >
-                                            <table>
+                                            <table id="table">
                                                 <tr>
                                                     <th style="width: 3rem;"> No </th>
                                                     <th style="width: 15rem;"> Nama </th>
@@ -130,78 +134,7 @@
                                                     <th style="width: 7rem;"> Status </th>
                                                     <th style="width: 7rem;"> Ubah status</th>
                                                 </tr>
-                                                <tr>
-                                                    <td> 1. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> Aktif </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 2. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432 </td>
-                                                    <td> HRD </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> Aktif </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 3. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432 </td>
-                                                    <td> Pemasaran </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> Aktif </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 4. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432 </td>
-                                                    <td> Manufaktur </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> Aktif </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 5. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432 </td>
-                                                    <td> SDM </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> Dipecat </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 6. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432 </td>
-                                                    <td> SDM </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> Mengundurkan diri </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 7. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432 </td>
-                                                    <td> SDM </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> Magang </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a> </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 8. </td>
-                                                    <td> Lorem Ipsum </td>
-                                                    <td> 1234323432 </td>
-                                                    <td> SDM </td>
-                                                    <td> <a href="cv/cv.jpg" style="color: royalblue;">Click here</a> </td>
-                                                    <td> cuti </td>
-                                                    <td> <a class="btn btn-primary" href="#" style="color: white;"> Ubah status </a> </td>
-                                                </tr>
+                                                
                                             </table>
                                         </div>
 

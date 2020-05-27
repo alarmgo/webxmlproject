@@ -4,10 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SIM_55_KEL7_P2</title>
+        <script type="text/javascript" src="../../../Res/js/jquery.js"></script>
+		<script type="text/javascript" src="../../../Res/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../../../Res/js/actions.js"></script>
         <link href="../../../Res/css/bootstrap.min.css" rel="stylesheet" />
         <link href="../../../Res/css/custom.css" rel="stylesheet" />
-        <script src="../../../Res/js/bootstrap.min.js"></script>
-        <script src="../../../Res/js/jquery.js"></script>
     </head>
     <body style="background-color: #e9e9e9;">
         <div class="container-fluid overflow-hidden">
@@ -19,8 +20,11 @@
 
                 </div>
                 <div class="col-3 text-right">
-                    <div class="mt-3 mr-4">
-                        09.18 &nbsp; Senin, 17 Februari 2020
+                    <div class="mt-3 mr-4" id="timenow">
+                        <script>
+                            time();
+                            sumrek();
+                        </script>
                     </div>    
                 </div>
             </div>
@@ -106,16 +110,16 @@
                                         <a href="#" class="col border-right">
                                             <div class="text-center my-auto" style="height: 2rem;">Data Pelamar</div>
                                         </a>
-                                        <a href="rekrut_tab2.html" class="col border-bottom border-right bg-light">
+                                        <a class="col border-bottom border-right bg-light">
                                             <div class="text-center my-auto" style="height: 2rem;">Peserta Tes Tahap 1</div>
                                         </a>
-                                        <a href="rekrut_tab3.html" class="col border-bottom border-right bg-light">
+                                        <a class="col border-bottom border-right bg-light">
                                             <div class="text-center my-auto" style="height: 2rem;">Peserta Lolos</div>
                                         </a>
-                                        <a href="rekrut_tab4.html" class="col border-bottom border-right bg-light">
+                                        <a class="col border-bottom border-right bg-light">
                                             <div class="text-center my-auto" style="height: 2rem;">Hiring</div>
                                         </a>
-                                        <a href="rekrut_tab5.html" class="col border-bottom border-right bg-light">
+                                        <a class="col border-bottom border-right bg-light">
                                             <div class="text-center my-auto" style="height: 2rem;">Report</div>
                                         </a>
                                     </div>
@@ -126,7 +130,7 @@
                                             </div>
                                         </div>
                                         <div class="row mx-auto w-100 px-4" >
-                                            <table>
+                                            <table id="table">
                                                 <tr>
                                                     <th style="width: 3rem;"> No </th>
                                                     <th> Nama </th>
@@ -134,76 +138,7 @@
                                                     <th style="width: 5rem"> CV </th>
                                                     <th style="width: 15rem;"> Tanggal </th>
                                                 </tr>
-                                                <tr>
-                                                    <td> 1. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 2. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 3. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 4. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 5. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 6. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 7. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 8. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 9. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> 10. </td>
-                                                    <td> Placeholder Name</td>
-                                                    <td> Accountant </td>
-                                                    <td> <a href="#" style="color: royalblue;">View</a> </td>
-                                                    <td> 15/02/2020 </td>
-                                                </tr>
+                                                
                                             </table>
                                         </div>
                                         <div class="row w-100 mx-0 px-2 py-2">

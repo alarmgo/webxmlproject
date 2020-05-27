@@ -23,7 +23,7 @@
                     <div class="mt-3 mr-4" id="timenow">
                         <script>
                             time();
-                            sumsdm();
+
                         </script>
                     </div>    
                 </div>
@@ -69,7 +69,7 @@
                             </a></li> -->
                         </ul>
                     </div>
-                    
+                    <script>sumsdm();</script>
                 </div>
                 <div class="col bhind" style="height: 200vh; position: relative;">
                         <div class="row px-2" style="margin-top: 8vh;">
@@ -141,10 +141,10 @@
                                         </div>  
                                         <div class="row h-50">
                                             <a href="report.html" class="col-6 bordered px-0" >
-                                                <div  class="px-2 font-weight-bolder bg-info" style="font-size: 12pt;border-bottom: 1px solid black;">
+                                                <div class="px-2 font-weight-bolder bg-info" style="font-size: 12pt;border-bottom: 1px solid black;">
                                                     Permintaan Pulang Awal
                                                 </div>
-                                                <span id="izin" class="py-0 pl-3" style="font-size: 5em;">
+                                                <span id="awal" class="py-0 pl-3" style="font-size: 5em;">
                                                 
                                                 </span> Orang
                                             </a>
@@ -152,8 +152,8 @@
                                                 <div class="px-2 font-weight-bolder bg-secondary text-white" style="font-size: 12pt;border-bottom: 1px solid black;">
                                                     Rata-Rata Keterlambatan
                                                 </div>
-                                                <span class="py-0 pl-3" style="font-size: 5em;">
-                                                30,5
+                                                <span id="avg" class="py-0 pl-3" style="font-size: 5em;">
+   
                                                 </span> Menit
                                             </a>
                                         </div>
@@ -179,7 +179,7 @@
                                     <div class="m-auto">Jumlah Lowongan</div>
                                 </div>
                                 <div class="row" style="height: 8rem;">
-                                    <div class="mx-auto my-4" style="font-size: 3rem;">25</div>
+                                    <div class="mx-auto my-4" style="font-size: 3rem;" id="open"> </div>
                                 </div>
                             </div>
                             <div class="col border-right">
@@ -187,7 +187,7 @@
                                     <div class="m-auto">Jumlah Pelamar</div>
                                 </div>
                                 <div class="row" style="height: 8rem;">
-                                    <div class="mx-auto my-4" style="font-size: 3rem;">43</div>
+                                    <div class="mx-auto my-4" style="font-size: 3rem;" id="appl"> </div>
                                 </div>
                             </div>
                             <div class="col">
@@ -195,7 +195,7 @@
                                     <div class="m-auto">Lolos Tes Tahap 1</div>
                                 </div>
                                 <div class="row" style="height: 8rem;">
-                                    <div class="mx-auto my-4" style="font-size: 3rem;">32</div>
+                                    <div class="mx-auto my-4" style="font-size: 3rem;" id="step"> </div>
                                 </div>
                             </div>
                         </div>

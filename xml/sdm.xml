@@ -8,8 +8,8 @@
         </attend>
 
         <report avg="30,5">
-            <awal> 35 </awal>
-            <late> 6 <late>
+            <awal> 4  </awal>
+            <late> 6 </late>
         </report>
 
         <recs>
@@ -89,6 +89,7 @@
         <divisi> Accountant </divisi>
         <tanggal> 15/02/2020 </tanggal>
     </rekrut>
+    
 
 
 </sdm>
