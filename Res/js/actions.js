@@ -37,12 +37,12 @@ function hnp(){
     })
 };    
 
-function summary(){
+function sumakn(){
     $.ajax({
         url: '../../xml/akn.xml',
         //dataType: 'xml',
         error: function () {
-          alert('failed to load data...'); 
+          alert(response); 
         },
         
         success: function (response) {
@@ -67,6 +67,34 @@ function summary(){
             $('#monthout').html(mout);
             $('#yearout').html(yout);
  
+        },
+    })
+};
+
+function sumsdm(){
+    $.ajax({
+        url: '../../xml/sdm.xml',
+        //dataType: 'xml',
+        error: function () {
+          alert('failed to load data...'); 
+        },
+        
+        success: function (response) {
+            var sum = $(response).find('attend');
+                                        
+           
+            var tkar = $(sum).children('tkar').text();	
+            var pres = $(sum).children('pres').text();					
+            var abs = $(sum).children('abs').text();					
+            var izin = $(sum).children('izin').text();					
+            
+            
+            $('#tkar').html(tkar);
+            $('#pres').html(pres);
+            $('#abs').html(abs);
+            $('#izin').html(izin);
+
+
         },
     })
 };

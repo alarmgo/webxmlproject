@@ -1,0 +1,94 @@
+<sdm>
+    <summary>
+        <attend>
+            <tkar> 49 </tkar>
+            <pres> 41 </pres>
+            <abs> 4 </abs>
+            <izin> 4 </izin>
+        </attend>
+
+        <report avg="30,5">
+            <awal> 35 </awal>
+            <late> 6 <late>
+        </report>
+
+        <recs>
+            <open> 25 </open>
+            <appl> 43 </appl>
+            <step> 32 </step>
+        </recs>
+    </summary>
+
+    <dkar>
+        <cuti> 4 </cuti>
+        <active> 49 </active>
+        <fired> 3 </fired>
+        <resign> 7 </resign>
+    </dkar>  
+
+    <master>
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> Accountant </divisi>
+            <status> Aktif </status>
+        </pegawai>  
+
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> HRD </divisi>
+            <status> Aktif </status>
+        </pegawai>  
+
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> Pemasaran </divisi>
+            <status> Dipecat </status>
+        </pegawai>  
+
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> Manufaktur </divisi>
+            <status> Aktif </status>
+        </pegawai>  
+
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> Manufaktur </divisi>
+            <status> Magang </status>
+        </pegawai>  
+
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> Pemasaran </divisi>
+            <status> Mengundurkan diri </status>
+        </pegawai>  
+
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> Pemasaran </divisi>
+            <status> Aktif </status>
+        </pegawai>  
+
+        <pegawai>
+            <nama> Lorem Ipum </nama>
+            <nip> 123432432 </nip>
+            <divisi> Accountant </divisi>
+            <status> Aktif </status>
+        </pegawai>  
+    </master>
+    
+    <rekrut>
+        <nama> Placeholder Name </nama>
+        <divisi> Accountant </divisi>
+        <tanggal> 15/02/2020 </tanggal>
+    </rekrut>
+
+
+</sdm>
