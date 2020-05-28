@@ -55,20 +55,20 @@ function cashFlow(){
                 
                 var data = products[i];
                 
-                var nama = $(data).children('nama').text();
-                var tanggal = $(data).children('tanggal').text();
+                var bukti = $(data).children('bukti').text();
+                var keterangan = $(data).children('keterangan').text();
                 var divisi = $(data).children('divisi').text();
-                var stok = $(data).children('stok').text();
-                var satuan = $(data).children('satuan').text();
+                var debet = $(data).children('debet').text();
+                var kredit = $(data).children('kredit').text();
                 var saldo = $(data).children('saldo').text();
                                             
                 $('#table tbody').append('<tr id="status">'+
                 '<td>' + (i+1) + '</td>' +
-                '<td>' + nama + '</td>' +
-                '<td>' + tanggal + '</td>' +
+                '<td>' + bukti + '</td>' +
+                '<td>' + keterangan + '</td>' +
                 '<td>' + divisi + '</td>' +
-                '<td>' + stok + '</td>' +
-                '<td>' + satuan + '</td>' +
+                '<td>' + debet + '</td>' +
+                '<td>' + kredit + '</td>' +
                 '<td>' + saldo + '</td>' 
                 );			
                 
