@@ -8,7 +8,7 @@ function productsManage(){
         },
         
         success: function (response) {
-            var products = $(response).find('debetMaster').children('produk');
+            var products = $(response).find('stokMaster').children('produk');
             
             var i;
 
@@ -16,19 +16,19 @@ function productsManage(){
                 
                 var data = products[i];
                 
-                var bukti = $(data).children('bukti').text();
-                var keterangan = $(data).children('keterangan').text();
-                var divisi = $(data).children('divisi').text();
-                var debet = $(data).children('debet').text();
-                var kredit = $(data).children('kredit').text();
+                var nama = $(data).children('nama').text();
+                var tanggal = $(data).children('tanggal').text();
+                var divisi = $(data).children('grade').text();
+                var stok = $(data).children('stok').text();
+                var satuan = $(data).children('satuan').text();
                                             
                 $('#table tbody').append('<tr id="status">'+
                 '<td>' + (i+1) + '</td>' +
-                '<td>' + bukti + '</td>' +
-                '<td>' + keterangan + '</td>' +
+                '<td>' + nama + '</td>' +
+                '<td>' + tanggal + '</td>' +
                 '<td>' + divisi + '</td>' +
-                '<td>' + debet + '</td>' +
-                '<td>' + kredit + '</td>'
+                '<td>' + stok + '</td>' +
+                '<td>' + satuan + '</td>'
                 );			
                 
             }
@@ -55,20 +55,20 @@ function cashFlow(){
                 
                 var data = products[i];
                 
-                var bukti = $(data).children('bukti').text();
-                var keterangan = $(data).children('keterangan').text();
+                var nama = $(data).children('nama').text();
+                var tanggal = $(data).children('tanggal').text();
                 var divisi = $(data).children('divisi').text();
-                var debet = $(data).children('debet').text();
-                var kredit = $(data).children('kredit').text();
+                var stok = $(data).children('stok').text();
+                var satuan = $(data).children('satuan').text();
                 var saldo = $(data).children('saldo').text();
                                             
                 $('#table tbody').append('<tr id="status">'+
                 '<td>' + (i+1) + '</td>' +
-                '<td>' + bukti + '</td>' +
-                '<td>' + keterangan + '</td>' +
+                '<td>' + nama + '</td>' +
+                '<td>' + tanggal + '</td>' +
                 '<td>' + divisi + '</td>' +
-                '<td>' + debet + '</td>' +
-                '<td>' + kredit + '</td>' +
+                '<td>' + stok + '</td>' +
+                '<td>' + satuan + '</td>' +
                 '<td>' + saldo + '</td>' 
                 );			
                 
