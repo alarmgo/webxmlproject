@@ -1,0 +1,106 @@
+<chat>
+    
+    <msg state="unread">
+        <name>Chat User 1 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+        
+    <msg state="read">
+        <name>Chat User 2 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+        
+    <msg state="unread">
+        <name>Chat User 3 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+    
+    <msg state="unread">
+        <name>Chat User 4 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="unread">
+        <name>Chat User 5 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 6 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+        
+    <msg state="read">
+        <name>Chat User 7 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 8 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 9 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 10 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 11 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 12 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 13 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 14 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+    
+    <msg state="read">
+        <name>Chat User 15 </name>
+        <preview> Lorem Ipsum Dolor Sit Amet... </preview>
+    </msg>
+
+
+
+
+</chat>

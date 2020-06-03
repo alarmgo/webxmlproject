@@ -90,79 +90,13 @@
                     <a href="index-load.html" class="col text-center">
                       <img src="../Img/gnf.png" class="w-25">
                     </a>
-                  </div>
-                
-                <div class="row bg-white" style="height: 40rem;">
-                    <div class="row h-100 w-100 mx-2">
-                        <div class="col-4 ">
-                            <div class="row">
-                                <h1 class="m-2">Chat</h1>
-                            </div>
-                            <div class="row">
-                                <div class=" mb-2 mx-2 w-100">
-                                    <input class="form-control" type="text" placeholder="Cari chat atau user" aria-label="Search">
-                                </div>
-                            </div>
-                            <div class="row" style="height: 2rem; font-size: 0.8rem;">
-                                <div class="col ">
-                                    <label for="state">Tampilkan :</label>
-
-                                    
-                                </div>
-                                <script>chatload('all')</script>
-                                <div class="col text-right">
-                                    <select id="state" style="border: none;" onchange=chatload(this.value)>
-                                        <option value="all" selected>Semua   &emsp;  </option>
-                                        <option value="unread">Belum Dibaca   &emsp;  </option>
-                                        <option value="read">Sudah Dibaca   &emsp;  </option>
-                                        
-                                
-                                      </select> 
-
-                                </div>
-                            </div>
-                            
-                            <div class="row mt-2" style="overflow-y: scroll; height: 30rem;">
-                                <div class="col">
-                                    <div class="row " style="height: auto;" >
-                                        <div id="chatbox" class="col">
-                                            <div class="row chat" style="height: 3rem; ">
-                                                <div class="col-4 text-center">
-                                                    <img src="../Img/profile.png" class="h-50 bg-secondary" style="border-radius: 50%;">
-                                                </div>
-                                                <div class="col-8">
-                                                    <div class="row font-weight-bolder">
-                                                            Dummy User
-                                                    </div>
-                                                    <div class="row text-secondary" style="font-size: small;">
-                                                            Lorem ipsum dolor sit amet...
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-8">
-                            <div class="row h-100">
-                                <div class="col m-auto  ">
-                                    <div class="row ">
-                                        <img class="mx-auto my-4" style="width: 4rem; opacity: 0.3;" src="../Img/basket.svg">
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8 mx-auto text-center">
-                                            Selamat datang di fitur chat Green N'Fresh Mart, silahkan pilih salah satu chatroom untuk mulai berkomunikasi!
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>                         
-                        </div>
-                    </div>
                 </div>
+                
+					<div class="container-fluid mt-5 mb-3 pt-4 w-100 h-100" id="maintenance">
+                        <script>maintenance3()</script>
+					</div>
+
+
             </div>
         </div>  
 

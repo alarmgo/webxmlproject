@@ -242,7 +242,147 @@ function sumrek(){
     })
 };
 
+function chatload(state){
+    $.ajax({
+        url: '../../../../xml/chat.xml',
+        //dataType: 'xml',
+        error: function () {
+          alert('gagal'); 
+        },
+        
+        success: function (response) {
 
+            if (state == "all"){
+
+                $('#chatbox').html("")
+
+                var msgs = $(response).find('msg');
+                                                              
+                var i;
+    
+                for (i=0; i < msgs.length; i++){
+                    
+                    var chat = msgs[i];
+                    
+                    var nama = $(chat).children('name').text();		
+                    var prev = $(chat).children('preview').text();	
+                    
+                    
+                    if ($(chat).attr('state') == "read"){
+
+                       $('#chatbox').append('' +    
+                        '<div class="row chat my-auto " style="height: 4rem; ">'+
+                            '<div class="col-4 text-center my-2">'+
+                                '<img src="../Img/profile.png" class="h-50 bg-secondary" style="border-radius: 50%;">'+
+                            '</div>'+
+                            '<div class="col-8 my-2">'+
+                                '<div class="row font-weight-bolder">'+
+                                        nama+
+                                '</div>'+
+                                '<div class="row text-secondary" style="font-size: small;">'+
+                                        prev+
+                                '</div>'+
+                            '</div>'+
+                        '</div>');
+
+                    } else if ($(chat).attr('state') == "unread"){
+
+                        $('#chatbox').append('' +    
+                        '<div class="row chat  unread" style="height: 4rem; ">'+
+                            '<div class="col-4 text-center my-2">'+
+                                '<img src="../Img/profile.png" class="h-50 bg-secondary" style="border-radius: 50%;">'+
+                            '</div>'+
+                            '<div class="col-8 my-2">'+
+                                '<div class="row font-weight-bolder">'+
+                                        nama+
+                                '</div>'+
+                                '<div class="row text-secondary" style="font-size: small;">'+
+                                        prev+
+                                '</div>'+
+                            '</div>'+
+                        '</div>');
+                    }
+
+                    
+                    
+                }
+
+                
+            } else if (state == "read"){
+
+                
+                $('#chatbox').html("")
+
+                var msgs = $(response).find('msg');
+                                                            
+                var i;
+    
+                for (i=0; i < msgs.length; i++){
+                    
+                    var chat = msgs[i];
+                    
+                    var nama = $(chat).children('name').text();		
+                    var prev = $(chat).children('preview').text();	
+
+                    if ($(chat).attr('state') == "read"){
+
+                        $('#chatbox').append('' +    
+                         '<div class="row chat my-auto " style="height: 4rem; ">'+
+                             '<div class="col-4 text-center my-2">'+
+                                 '<img src="../Img/profile.png" class="h-50 bg-secondary" style="border-radius: 50%;">'+
+                             '</div>'+
+                             '<div class="col-8 my-2">'+
+                                 '<div class="row font-weight-bolder">'+
+                                         nama+
+                                 '</div>'+
+                                 '<div class="row text-secondary" style="font-size: small;">'+
+                                         prev+
+                                 '</div>'+
+                             '</div>'+
+                         '</div>');
+                    }
+                }
+
+             } else if (state == "unread"){
+
+                
+                $('#chatbox').html("")
+
+                var msgs = $(response).find('msg');
+                                                            
+                var i;
+    
+                for (i=0; i < msgs.length; i++){
+                    
+                    var chat = msgs[i];
+                    
+                    var nama = $(chat).children('name').text();		
+                    var prev = $(chat).children('preview').text();	
+
+                    if ($(chat).attr('state') == "unread"){
+
+                        $('#chatbox').append('' +    
+                        '<div class="row chat  unread" style="height: 4rem; ">'+
+                            '<div class="col-4 text-center my-2">'+
+                                '<img src="../Img/profile.png" class="h-50 bg-secondary" style="border-radius: 50%;">'+
+                            '</div>'+
+                            '<div class="col-8 my-2">'+
+                                '<div class="row font-weight-bolder">'+
+                                        nama+
+                                '</div>'+
+                                '<div class="row text-secondary" style="font-size: small;">'+
+                                        prev+
+                                '</div>'+
+                            '</div>'+
+                        '</div>');
+                    }
+                }
+            }
+          
+ 
+        },
+    })
+};
 
 function time(){
     var t = new Date().toLocaleString();
@@ -265,3 +405,12 @@ function maintenance2(){
      
      });
 }
+
+function maintenance3(){
+    $(document).ready(function(){
+   
+        $('#maintenance').load('../../../../Error/main.html');
+     
+     });
+}
+

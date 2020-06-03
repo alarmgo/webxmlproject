@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIM_55_KEL7_P2</title>
+    <script src="../../../../Res/js/jquery.js"></script>
+    <script src="../../../../Res/js/popper.min.js"></script>
+    <script src="../../../../Res/js/bootstrap.min.js"></script>
+    <script src="../../../../Res/js/actions.js"></script>
+    <link href="../../../../Res/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../../Res/css/custom.css" rel="stylesheet" />
+
+
+</head>
+
+<body background="grey">
+
+    <body class="bg-light" style="font-family: Arial, Helvetica, sans-serif;">
+
+
+        <div class="container border d-sm-none d-md-none d-lg-block" style="width: 5rem; height: 5rem; position: fixed; bottom: 1rem; left: 1rem;">
+            <div class="row">
+                <div class="col p-0">
+                    <a href="index-load.html">
+                        <button class="w-100 btn btn-nact">
+                    Desktop
+                  </button>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <a href="../index-load.html">
+                        <button class="w-100 btn btn-ndis">
+                    Mobile
+                  </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container shadow bg-white" style="min-width: 25rem; height: auto;">
+
+
+            <!-- NAVBARS TOP BOTTOM-->
+            <div class="row" style="z-index: 100;">
+                <div class="col navtop position-fixed bg-gnf" style="min-width: 25rem; max-width: 71.3rem; height: 4rem;">
+                  <div class="row h-100">
+                    <div class="col-4 bg-light my-auto mx-2" style="height: 2.5rem;">
+                      <div class="row h-100">
+                        <div class="col m-auto">
+                          <img src="../Img/find.png">
+                        </div>
+                        <div class="col-10 my-auto " style="position: relative; left: -2rem;">
+                          <input type="text" placeholder="Cari buah dan sayur terbaik!" style="width: 20rem; border: none; background-color: transparent;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col mx-2 text-right">
+                      <div class="row h-100">
+                        <div class="col h-100 ">
+                          <div class="btn-group h-100">
+                            <button class="btn btn-success" style="width: 4rem;" onclick="window.location.href='cart-load.html'"><img src="../Img/cart.png" class="w-100"></button>
+                            <button class="btn btn-success" style="width: 4rem;" onclick="window.location.href='message-load.html'"><img src="../Img/mail.png" class="w-100"></button>
+                            <button class="btn btn-success" style="width: 4rem;" onclick="window.location.href='notify-load.html'"><img src="../Img/bell.png" class="w-100"></button>
+                            <div class="btn-group" style="font-size: 0.8rem;">
+                              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="font-size: 0.8rem;">
+                                User Dummy
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-right"  style="font-size: 0.8rem;">
+                                <button class="dropdown-item" type="button">Pengaturan</button>
+                                <button class="dropdown-item" type="button">Bantuan</button>
+                                <button class="dropdown-item" type="button">Keluar</button>
+                              </div>
+                            </div>
+        
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="container-fluid px-0 h-100 w-100" style="margin-top: 4rem;">
+                <div class="row bg-gnf">
+                    <a href="index-load.html" class="col text-center">
+                      <img src="../Img/gnf.png" class="w-25">
+                    </a>
+                </div>
+                
+                <div class="container-fluid px-0" style=" height: calc(100vh - 6rem);">
+                    <div class="row h-100">
+                        <div class="col">
+                      
+                        <div class="row mt-3">
+                            <div class="col text-black-50 mb-1" style="font-size: 0.7rem;">
+                            Alamat dan penerima
+                            </div>
+                        </div>
+            
+                        <a href="#">
+                            <div class="row mx-2 cart-item" style="height: 5rem;">
+                                <div class="col my-auto">
+            
+                                    <div class="row mt-1">
+                                        <div class="col text-black-50" style="font-size: 0.8rem;">
+                                            <span class="font-weight-bold text-dark">Dummy User</span> <br />
+                                            Perum. dummy no.123/45 rt.00/rw.00, kel. abcdefghij, kec. abcdefghij, kota bogor. 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                      
+                        <div class="row mt-3">
+                            <div class="col text-black-50 mb-1" style="font-size: 0.7rem;">
+                                Waktu Pengiriman
+                            </div>
+                        </div>
+                        <div class="row mx-2 ">
+                            <div class="col my-auto">
+            
+                            <div class="row mt-1">
+                                <div class="col text-black-50" style="font-size: 0.8rem;">
+                                    <div class="row">
+                                    <div class="col">
+                                        <span class="font-weight-bold text-dark">Hari</span> <br />
+                                        <select  style="width: 100%; border: none; border-bottom: 1px solid green;">
+                                            <option selected value="today">Hari ini</option>
+                                            <option value="besok">Besok</option>
+                                            <option value="lusa">Lusa</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <span class="font-weight-bold text-dark">Waktu</span> <br />
+                                        <select  style="width: 100%; border: none; border-bottom: 1px solid green;">
+                                            <option value disabled="pagi">Pagi (06.00 - 08.00)</option>
+                                            <option value selected="siang">Siang (10.00 - 12.00)</option>
+                                            <option value="sore">Sore (15.00 - 17.00)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-3">
+                    <div class="col text-black-50 mb-1" style="font-size: 0.7rem;">
+                        Pembayaran
+                    </div>
+                </div>
+                
+                <div class="row mx-2 ">
+                    <div class="col my-auto">
+                        <div class="row mt-1">
+                            <div class="col text-black-50" style="font-size: 0.8rem;">
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="font-weight-bold text-dark">Metode</span> <br />
+                                        <select  style="width: 100%; border: none; border-bottom: 1px solid green;">
+                                            <option selected value="cod">Cash On Delivery</option>
+                                            <option value="gnfpoint">GnF - Point</option>
+                                            <option value="paylater">PayLater</option>
+                                        </select>
+                                    </div>
+                                </div>
+            
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <span class="font-weight-bold text-dark">Kode Promo</span> <br />
+                                        <input type="text" placeholder="Masukkan kode promo?" value="24YUR" style="width: 100%; border: none; border-bottom: 1px solid green;">
+                                    </div>
+                                    <div class="col">
+                                        <span class="font-weight-bold text-dark"></span> <br />
+                                        <span class="font-weight-bold text-success">&#10004; Kode promo valid</span>
+                                    </div>
+                                </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--- ITEM CART -->
+                <div class="row mt-3">
+                    <div class="col text-black-50 mb-1" style="font-size: 0.7rem;">
+                        Produk yang dibeli
+                    </div>
+                </div>
+                <div class="container" style="overflow-y: scroll; height: 12rem;">
+                
+                    <div class="row" >
+                        <div class="col">
+                            <div class="row" style=" border-top: 1px solid gray;">
+                                <div class="col-2 bg-secondary p-0 text-center" style="height: 6rem;">
+                                    <img src="../Img/kentang.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                                </div>
+                                <div class="col">
+                                    <div class="row h-25">
+                                        <div class="col" style="font-size: 1rem;">
+                                            Kentang Organik 
+                                        </div>
+                                    </div>
+                                    <div class="row h-75 " style="position: relative;">
+                                        <div class="row mx-1" style="position: absolute; bottom: 0;">
+                                            <div class="col ">
+                                                <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                                                    Kg
+                                                </div>
+                                            <div class="col">
+                                                Rp.12.345
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row " >
+                        <div class="col">
+                            <div class="row" style=" border-top: 1px solid gray;">
+                                <div class="col-2 bg-secondary p-0 text-center" style="height: 6rem;">
+                                    <img src="../Img/basket.svg" style="height: 100%; width: 100%; object-fit: contain;">
+                                </div>
+                                <div class="col">
+                                    <div class="row h-25">
+                                        <div class="col" style="font-size: 1rem;">
+                                            Dummy Item
+                                        </div>
+                                    </div>
+                                    <div class="row h-75 " style="position: relative;">
+                                        <div class="row mx-1" style="position: absolute; bottom: 0;">
+                                            <div class="col ">
+                                                <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                                                    Kg
+                                                </div>
+                                            <div class="col">
+                                                Rp.12.345
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row " >
+                        <div class="col">
+                            <div class="row" style=" border-top: 1px solid gray;">
+                                <div class="col-2 bg-secondary p-0 text-center" style="height: 6rem;">
+                                    <img src="../Img/basket.svg" style="height: 100%; width: 100%; object-fit: contain;">
+                                </div>
+                                <div class="col">
+                                    <div class="row h-25">
+                                        <div class="col" style="font-size: 1rem;">
+                                            Dummy Item
+                                        </div>
+                                    </div>
+                                    <div class="row h-75 " style="position: relative;">
+                                        <div class="row mx-1" style="position: absolute; bottom: 0;">
+                                            <div class="col ">
+                                                <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                                                    Kg
+                                                </div>
+                                            <div class="col">
+                                                Rp.12.345
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row " >
+                        <div class="col">
+                            <div class="row" style=" border-top: 1px solid gray;">
+                                <div class="col-2 bg-secondary p-0 text-center" style="height: 6rem;">
+                                    <img src="../Img/basket.svg" style="height: 100%; width: 100%; object-fit: contain;">
+                                </div>
+                                <div class="col">
+                                    <div class="row h-25">
+                                        <div class="col" style="font-size: 1rem;">
+                                            Dummy Item
+                                        </div>
+                                    </div>
+                                    <div class="row h-75 " style="position: relative;">
+                                        <div class="row mx-1" style="position: absolute; bottom: 0;">
+                                            <div class="col ">
+                                                <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                                                    Kg
+                                                </div>
+                                            <div class="col">
+                                                Rp.12.345
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row " >
+                        <div class="col">
+                            <div class="row" style=" border-top: 1px solid gray;">
+                                <div class="col-2 bg-secondary p-0 text-center" style="height: 6rem;">
+                                    <img src="../Img/basket.svg" style="height: 100%; width: 100%; object-fit: contain;">
+                                </div>
+                                <div class="col">
+                                    <div class="row h-25">
+                                        <div class="col" style="font-size: 1rem;">
+                                            Dummy Item
+                                        </div>
+                                    </div>
+                                    <div class="row h-75 " style="position: relative;">
+                                        <div class="row mx-1" style="position: absolute; bottom: 0;">
+                                            <div class="col ">
+                                                <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                                                    Kg
+                                                </div>
+                                            <div class="col">
+                                                Rp.12.345
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="row " >
+                        <div class="col">
+                            <div class="row" style=" border-top: 1px solid gray;">
+                                <div class="col-2 bg-secondary p-0 text-center" style="height: 6rem;">
+                                    <img src="../Img/basket.svg" style="height: 100%; width: 100%; object-fit: contain;">
+                                </div>
+                                <div class="col">
+                                    <div class="row h-25">
+                                        <div class="col" style="font-size: 1rem;">
+                                            Dummy Item
+                                        </div>
+                                    </div>
+                                    <div class="row h-75 " style="position: relative;">
+                                        <div class="row mx-1" style="position: absolute; bottom: 0;">
+                                            <div class="col ">
+                                                <input class="text-center" type="number" value="2" style="width: 3rem;" step="0.5">
+                                                    Kg
+                                                </div>
+                                            <div class="col">
+                                                Rp.12.345
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>  
+
+                <div class="row mt-3">
+                    <div class="col bgd">
+                        <div class="row bgw ">
+                            <div class="col-10" style="border-right: solid 1px gray;">
+                                <div class="row h-25" >
+                                    <div class="col mt-2" style="font-size: 2rem;">
+                                        Total
+                                    </div>
+                                </div>
+                                <div class="row h-75">
+                                    <div class="col-10 my-auto" style="font-size: 1rem;">
+                                        <strike class="text-danger">Rp23.500</strike>
+                                    </div>
+                                    <div class="col px-0 font-weight-bolder" style="font-size: 1.5rem;">
+                                        Rp18.500
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 my-autoh-100">
+                                <a href="confirm-load.html">
+                                    <button class="btn btn-success w-100 h-100">
+                                        Konfirmasi
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body> 
+            
+
+
+
+
+
+
+
+</html>
